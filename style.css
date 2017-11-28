@@ -1,0 +1,111 @@
+/* CSS */
+/* BODY STYLE */
+body {
+padding: 200px;
+background-color: whiteSmoke;
+display: flex;
+justify-content: center;
+padding: 20px;
+font-family:'Roboto', sans-serif;
+font-size: 16px;
+color: white;
+}
+/* STYLE FOR THE HEADER NAV LINKS */
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+li {
+float: right;
+}
+li a {
+color: white;
+padding: 0px 12px;
+font-size: 24px;
+font-family: 'Nunito', sans-serif;
+}
+li a:hover {
+text-decoration: none;
+}
+/* ONE CONTAINER TO BIND THEM ALL */
+.container {
+display: grid;
+width: 900px;
+height: 730px;
+grid-template-columns: 200px 1fr 1fr;
+grid-template-rows: 85px 1fr 1fr 25px;
+grid-gap: 10px;
+}
+/* HEADER */
+.header {
+grid-row: 1 / 2;
+grid-column: 1 / 4;
+display: grid;
+grid-gap: 10px;
+grid-template-columns: 310px 1fr;
+background-color: steelBlue;
+padding: 5px;
+}
+/* A COLUMN FOR THE LOGO */
+#hedCol1 {
+grid-column: 1;
+grid-row: 1;
+background-color: white;
+padding: 0px;
+}
+/* LOGO FOR THE COLUMN */
+#headerImage {
+width: 310px;
+max-height: auto;
+padding-right: 20px;
+}
+/* A COLUMN FOR THE NAV LINKS*/
+#hedCol2 {
+grid-column: 2;
+grid-row: 1;
+background-color: lightSteelBlue;
+}
+/* SIDEBAR FOR THE RAIL LINE MAP */
+.sidebar {
+grid-row: 2 / 4;
+grid-column: 1 / 2;
+background-color: mediumBlue;
+padding: 0px;
+}
+/* IMAGE OF THE ROUTE MAP */
+#sidebarImage {
+width: 200px;
+max-height: auto;
+}
+/* TRAIN TIMETABLE COLUMN */
+.content-1 {
+grid-row: 2 / 3;
+grid-column: 2 / 4;
+background-color: orange;
+padding: 20px;
+color: black;
+}
+#panelStyle {
+font-size: 26px;
+font-family: 'Nunito', sans-serif;
+color: white;
+}
+/* USER INPUT COLUMN */
+.content-2 {
+grid-row: 3 / 4;
+grid-column: 2 / 4;
+background-color: lightSteelBlue;
+padding: 20px;
+color: darkslategray;
+}
+/* FOOTER */
+.footer {
+grid-row: 4 / 5;
+grid-column: 1 / 4;
+background-color: steelBlue;
+padding: 6px;
+font-size: 10px;
+text-align: right;
+}
